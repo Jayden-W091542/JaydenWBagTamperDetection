@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Flexbox Demo</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <h1>My Flexbox Layout</h1>
+
+        <div class="flex-container">
+            <div class="flex-item">
+                <h2>Alarm Status</h2>
+                <label class="toggle-switch">
+                    <input type="checkbox" id="toggleControl1" onchange="updateStatus(1)" />
+                    <span class="slider"></span>
+                </label>
+                <div class="toggle-label" id="toggleStatus1">Off</div>
+            </div>
+            <div class="flex-item">
+                <h2>Buzzer</h2>
+                 <label class="toggle-switch">
+                    <input type="checkbox" id="toggleControl2" onchange="updateStatus(2)" />
+                    <span class="slider"></span>
+                </label>
+                <div class="toggle-label" id="toggleStatus2">Off</div>
+            </div>
+            <div class="flex-item">
+                <h2>Current movement</h2>
+            </div>
+            <div class="flex-item">
+                <h2>Movement log</h2>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
