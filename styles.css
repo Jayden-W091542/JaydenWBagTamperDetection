@@ -1,4 +1,7 @@
-
+/*
+ I want you to put a comment above each of these chunks of code or a group of them to explain what they are styling
+ I have done an example on for the flex container
+*/
   * {
     box-sizing: border-box;
   }
@@ -16,6 +19,10 @@
     margin-bottom: 30px;
   }
 
+/*
+FLEX CONTAINER
+allows the flex items to resize as the screen/window is resized
+*/
   .flex-container {
     display: flex;
     flex-wrap: wrap;
