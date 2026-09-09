@@ -10,7 +10,6 @@ Adafruit_ADXL345_Unified accel = Adafruit_ADXL345_Unified(12345);
 void setup() {
   Serial.begin(115200);
 
-
   /* Initialise the sensor */
   if(!accel.begin())
   {
@@ -21,12 +20,9 @@ void setup() {
 
     /* Set the range to whatever is appropriate for your project */
   accel.setRange(ADXL345_RANGE_16_G);
-  // accel.setRange(ADXL345_RANGE_8_G);
-  // accel.setRange(ADXL345_RANGE_4_G);
-  // accel.setRange(ADXL345_RANGE_2_G);
-
 
   //add buzzer
+  //HAN COMMENT where could we look for code to make the buzzer work? Do you have a buzzer already so we can use its product code in our search?
 }
 
 void loop() {
@@ -41,7 +37,13 @@ void loop() {
   Serial.print("Z: "); Serial.print(event.acceleration.z); Serial.print("  ");Serial.println("m/s^2 ");
   delay(500);
 
-if 
-else
+  //HAN COMMENT I think you want something similar to this code to have the alarm go off 
+  //but you will need to test with your code to find the trigger value that works for you
+int trigger = 5;
+if (event.acceleration.x > trigger){
+  //beep
+}else{
+ //no beep
+}
 
 }
